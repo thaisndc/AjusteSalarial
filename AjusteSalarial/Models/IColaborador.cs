@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace AjusteSalarial.Models
+﻿namespace AjusteSalarial.Models
 {
     public interface IColaborador
     {
         string Nome { get; set; }
-        string Função { get; set; }
-        double Salárior { get; set; }
+        string Funcao { get; set; }
+        double Salario { get; set; }
         int Anoadm { get; set; }
     }
 }

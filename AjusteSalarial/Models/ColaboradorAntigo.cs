@@ -1,18 +1,15 @@
-﻿using AjusteSalarial.Models;
-using System;
-
-namespace AjusteSalarial.Models
+﻿namespace AjusteSalarial.Models
 {
     public class ColaboradorAntigo : Colaborador
     {
-        public ColaboradorAntigo(string nome, string função, double salárior, int anoadm) : base(nome, função, salárior, anoadm)
+        public ColaboradorAntigo(string nome, string funcao, double salárior, int anoadm) : base(nome, funcao, salárior, anoadm)
         {
 
         }
 
-        public void AjusteSalario(double porcent)
+        public void AjusteSalario(double porcent)// 10 = +10%
         {
-            Salárior = (Salárior * (porcent / 100)) + Salárior;
+            Salario = (Salario * (porcent / 100)) + Salario;
         }
 
     }
